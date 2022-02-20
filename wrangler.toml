@@ -1,0 +1,8 @@
+name = "last-scrobble"
+account_id = "a16cbdebf4a8b8df213ad63bffd6e5a1"
+type = "javascript"
+workers_dev = true
+
+[env.production]
+route = "workers.tim-kleyersburg.de/last-scrobble"
+zone_id = "7581e1e2240a6a6cec9e232a24da9ca9"

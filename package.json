@@ -1,0 +1,16 @@
+{
+    "private": true,
+    "name": "lastfm-cloudflare-worker",
+    "version": "0.0.1",
+    "description": "Fetch my latest scrobble",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "format": "prettier --write '**/*.{js,css,json,md}'"
+    },
+    "author": "Tim Kleyersburg <timkley@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "prettier": "^1.18.2"
+    }
+}
