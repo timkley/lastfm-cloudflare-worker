@@ -13,11 +13,11 @@ async function handleRequest(event) {
         return response
     }
 
-    const scrobble = await fetch(
+    const lastfmResponse = await (await fetch(
         `http://ws.audioscrobbler.com/2.0/?format=json&method=user.getrecenttracks&user=timmotheus&limit=1&api_key=${LASTFM_API_KEY}`,
-    )
+    )).json()
 
-    response = new Response(JSON.stringify(await scrobble.json()), {
+    response = new Response(JSON.stringify(lastfmResponse.recenttracks.track[0]), {
         headers: {
             'Access-Control-Allow-Origin': '*',
         },
