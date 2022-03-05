@@ -20,6 +20,7 @@ async function handleRequest(event) {
     response = new Response(JSON.stringify(lastfmResponse.recenttracks.track[0]), {
         headers: {
             'Access-Control-Allow-Origin': '*',
+            'Cache-Control': 'max-age: 300',
         },
     })
 
